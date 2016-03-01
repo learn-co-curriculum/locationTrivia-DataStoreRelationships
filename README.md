@@ -9,6 +9,8 @@
 
 ## Review
 
+*The following review should be read before proceeding to the instructions. The implementation of the code discussed in the review should be done once you begin the instructions.*
+
 From time to time, we may want one instance of a class (and whatever data it holds onto) to be accessed by many other objects in your program. This is very useful for organizing your application's data into one place--hence the designation in this case of "Data Store." One way to accomplish this is with a **shared instance** of that class. A shared instance is typically accessed by a class method which creates only one instance over the lifetime of the application. Any and all calls to that class method return the one instance already instantiated. You'll often hear this referred to as a "singleton." 
 
 The `dispatch_once` function from Grand Central Dispatch (GCD) is what permits this behavior. It's kind of like a punch card that reads 'admit one.' It retains all of its identifying information, but won't permit the application to run the block argument more than once. In the current case, that means only instantiating the shared instance one time. The code that Apple provides for creating such a shared instance is this somewhat cryptic set of code: 
@@ -71,7 +73,7 @@ Now that we have our singleton class set up, we can access it from any view cont
 }
 ```
 
-This next lab already has these steps set up for you. Take a moment to look over the data store's files to see how they're laid out, then solve the lab by connecting a new view controller to the data store.
+Take a moment to look over the data store's files to see how they're laid out, then solve the lab by connecting a new view controller to the data store.
 
 ## Instructions
 
@@ -138,10 +140,13 @@ This next lab already has these steps set up for you. Take a moment to look over
     [ladyLiberty.trivia addObjectsFromArray:@[trivium3A]];
     
     [self.locations addObjectsFromArray:@[bowlingGreen, empireState, ladyLiberty]];
-}```
+}
+```
 
 ## Advanced
 
 Add functionality to get the users actual location. Beware that significant changes to `CLLocation` were made with iOS 8, so resources older than September 2014 might be incorrect.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/locationTrivia-DataStoreRelationships' title='Location Trivia - Data Store Relationships'>Location Trivia - Data Store Relationships</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/locationTrivia-DataStoreRelationships'>Location Trivia - Data Store Relationships</a> on Learn.co and start learning to code for free.</p>
