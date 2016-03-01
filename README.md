@@ -87,7 +87,7 @@ This next lab already has these steps set up for you. Take a moment to look over
   * Use the `location` property's `trivia` array to load the table view. Each cell should display the `FISTrivium` object's "content" in the `textLabel`, and the number of "likes" in the `detailTextLabel`.
 
 4. Create a new view controller named `FISAddLocationViewController` that will be presented modally from the locations table view controller. 
-  * Add three text fields for the name, latitude, and longitude. Set their accessibility labels & identifiers to `@"nameField"`, `@"latitudeField`, and `@"longitudeField"` respectively.
+  * Add three text fields for the name, latitude, and longitude. Set their accessibility labels & identifiers to `@"nameField"`, `@"latitudeField"`, and `@"longitudeField"` respectively.
   * Add two buttons, one to "cancel" adding a location, and one to "save" a new location with the information entered in the text fields. Set their accessibility labels & identifiers to `@"cancelButton"` and `@"saveButton"` respectively.
   * When the "cancel" button is tapped, dismiss the view controller.
   * When the "submit" button is tapped, use the information in the text fields to create new a instance of `FISLocation` and add it the the data store's `locations` array. Then dismiss the view controller.
@@ -145,3 +145,5 @@ This next lab already has these steps set up for you. Take a moment to look over
 Add functionality to get the users actual location. Beware that significant changes to `CLLocation` were made with iOS 8, so resources older than September 2014 might be incorrect.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/locationTrivia-DataStoreRelationships' title='Location Trivia - Data Store Relationships'>Location Trivia - Data Store Relationships</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/locationTrivia-DataStoreRelationships'>Location Trivia - Data Store Relationships</a> on Learn.co and start learning to code for free.</p>
