@@ -145,3 +145,5 @@ This next lab already has these steps set up for you. Take a moment to look over
 Add functionality to get the users actual location. Beware that significant changes to `CLLocation` were made with iOS 8, so resources older than September 2014 might be incorrect.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/locationTrivia-DataStoreRelationships' title='Location Trivia - Data Store Relationships'>Location Trivia - Data Store Relationships</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/locationTrivia-DataStoreRelationships'>Location Trivia - Data Store Relationships</a> on Learn.co and start learning to code for free.</p>
